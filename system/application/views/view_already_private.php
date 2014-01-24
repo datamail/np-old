@@ -1,0 +1,3 @@
+<h1>Already Signed Up</h1>
+You already are signed up for a Private Account...
+<div class="space"></div>

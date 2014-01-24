@@ -1,0 +1,70 @@
+translate(500,550);
+background(color(44,44,44));
+
+ArrayList category = new ArrayList();
+boolean exit = false;
+int array_list_counter;
+for(int b =0; b < data.length; b++)
+{
+array_list_counter = category.size();
+while(array_list_counter > 0 && exit == false)
+{
+if(((String) category.get(array_list_counter)).equals(data[b][1]))
+{
+exit = true;
+}
+}
+if(exit == false){
+println(data[b][1]);
+}
+exit = false;
+//check for unique category in column 2 and assign it a colour either fromm color array or random in color array
+//then check each time draw to see what category
+}
+println("poes");
+for(int a = 0; a < category.size(); a++){
+println(category.get(a));
+}
+
+smooth();
+PFont myFont = loadFont("Geo");  
+int font_size = 15;
+textFont(myFont, font_size);  
+textAlign(LEFT, CENTER);
+
+int largest = 0;
+float total = 0;
+for (int a = 0; a < data.length; a++){
+
+total +=  int(data[a][1]);
+
+}
+
+multiplier = (2 * PI) / total;
+
+for(int a =0; a < data.length; a++)
+{
+rotate(data[a][1] * multiplier  / 2);
+translate(5, 0);
+text(data[a][0], 335, 0);
+rotate(-data[a][1] * multiplier  / 2);
+arc(0, 0, 650, 650, 0, data[a][1] * multiplier);
+rotate(data[a][1] * multiplier  / 2);
+translate(-5, 0);
+rotate(-data[a][1] * multiplier  / 2);
+
+
+
+translate(0, 0);
+rotate(data[a][1] * multiplier);
+}
+
+translate(-500, -550);
+
+int font_size = 24;
+textFont(myFont, font_size);  
+textAlign(LEFT, BASELINE);
+text(title, 100, 50);
+int font_size = 13;
+textFont(myFont, font_size);  
+textblock(blurb, 100 , 70, 700);

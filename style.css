@@ -1,0 +1,724 @@
+body{
+    font: 14px/1.5 Helvetiker, Helvetica,Arial,'Liberation Sans',FreeSans,sans-serif;
+    background:#f8f8f8 url(http://numberpicture.com/img/background.jpg);
+    text-align:center;
+    }
+
+#content_wrap{
+    width:1000px;
+    margin:0 auto;
+    }
+
+a{text-decoration:none;
+    color:#000;
+    text-transform:uppercase;
+}
+
+a:hover{
+    color: #FF1980;
+    cursor: pointer;
+    }
+    
+a img {
+    border: none;
+}
+    
+li{
+    list-style:square;
+    }
+    
+.full_width {
+    width: 100%;
+}
+
+.full_width:hover {
+    width: 100%;
+    overflow:auto;
+}
+
+.capitalize{
+    text-transform:capitalize;
+    }
+    
+.clear{
+    clear:both;
+    }
+    
+.bold{
+    font-weight:bold;
+    }
+    
+.lowercase {
+    text-transform: none;
+}
+
+.space {
+    width: 100%;
+    height: 200px;
+    display:block;
+}
+    
+input{
+    padding:10px;
+    border: none;
+    background: #EAEAEA;
+    -moz-box-shadow: 3px 3px 5px 0px #888;
+    -webkit-box-shadow:  3px 3px 5px 0px #888;
+}
+
+#search_input {
+    padding:4px 0 4px 0;
+    width: 100%;
+}
+
+.long_input {
+    width: 50%;
+}
+
+.highlight {
+    color: #FF1980;
+}
+
+.relative {
+    position: relative;
+}
+
+input[type = submit], .psuedo_button {
+    font-family: 'Geo', arial, serif;
+    font-size: 1.4em;
+    border: #777 1px solid;
+    text-transform: uppercase;
+    padding:10px;
+    background: #EAEAEA;
+    cursor: pointer;
+    -moz-box-shadow: 3px 3px 5px 0px #888;
+    -webkit-box-shadow:  3px 3px 5px 0px #888;
+}
+
+.psuedo_button {
+    position:relative;
+    top: 10px;
+    -moz-box-shadow: 3px 3px 5px 0px #888;
+    -webkit-box-shadow:  3px 3px 5px 0px #888;
+}
+
+#login_and_search .psuedo_button {
+    padding: 0 10px 0 10px;
+    position:relative;
+    top:0;
+    font-size: 1em;
+}
+
+select {
+    width: 300px;
+    border: none;
+    text-transform: uppercase;
+    padding:10px;
+    background: #EAEAEA;
+    cursor: pointer;
+   -moz-box-shadow: 3px 3px 5px 0px #888;
+    -webkit-box-shadow:  3px 3px 5px 0px #888;
+}
+
+input[type = submit]:hover, .psuedo_button:hover {
+    background: #F9F9F9;
+    color: #FF1980;
+    -moz-box-shadow: 3px 3px 5px 0px #444;
+    -webkit-box-shadow:  3px 3px 5px 0px #444;
+}
+.small_thumb{
+    width:100px;
+    float:left;
+    margin:0 10px 10px 0;
+}
+textarea {
+    width:98%;
+    padding:10px;
+    border: none;
+    background: #EAEAEA;
+    font: 14px/1.5 Helvetica,Arial,'Liberation Sans',FreeSans,sans-serif;
+   -moz-box-shadow: 3px 3px 5px 0px #888;
+    -webkit-box-shadow:  3px 3px 5px 0px #888;
+}
+
+h1 {
+    font-size: 2.4em;
+    font-family: 'Geo', arial, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+h2, h3 {
+    font-family: 'Geo', arial, serif;
+    font-weight: normal;
+    
+    margin-bottom:0;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+.border_bottom{border-bottom: 1px solid #bbb;}
+
+.right{
+    float: right;
+}
+
+.left {
+    float: left;
+    text-align: left;
+}
+
+.no_transform {
+    text-transform: none;
+}
+
+#header{
+    width:600px;
+    margin: 0 auto;
+    position: relative;
+    }
+
+#login_and_search {
+    float:right;
+    
+}
+
+#privacy_button {
+    width: 90px;
+    height: 60px;
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: url(http://numberpicture.com/img/privacy_button.png) top;
+    visibility: hidden;
+}
+
+#privacy_button:hover {
+    background-position: bottom;
+}
+
+#header_banner {
+    width: 600px;
+    height: 100px;
+    display: block;
+    background: url(img/header.png) top;
+}
+
+#header_banner:hover {
+    background-position: bottom;
+}
+
+#menu {
+    width:600px;
+    margin: 0 auto;
+    margin-bottom:10px;
+    font-size:1.7em;
+    font-family: 'Geo', arial, serif;
+    }
+    
+    #menu a {
+        height: 30px;
+        display: block;
+        float:left;
+    }
+    
+    #menu a.visualize {
+        width: 130px;
+    }
+
+    
+    #menu a.gallery {
+        margin-left: 30px;
+        width: 110px;
+    }
+    
+    #menu a.make_a_template {
+        margin-left: 20px;
+        width: 210px;
+    }
+    
+    #menu a.learn {
+        margin-left: 20px;
+        width: 80px;
+    }
+
+#inner_content {
+    padding: 10px 0 20px 0;
+    clear:both;
+}
+
+#featured {
+    -moz-box-shadow: 10px 10px 10px 0px #888;
+    -webkit-box-shadow:  10px 10px 10px 0px #888;
+}
+
+.disclaimer {
+    float: right;
+    text-align: right;
+    font-size: 0.7em;
+}
+
+.note {
+    font-size: 0.7em;
+}
+
+#slideshow_button {
+    width: 32px;
+    height: 32px;
+    display: block;
+    background: url(img/slideshow.png);
+    position: absolute;
+    top: -35px;
+    right: 10px;
+    float: right;
+}
+
+.thumb_container {
+    width:240px;
+    height:240px;
+    display:block;
+    position: relative;
+    float:left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    -moz-box-shadow: 5px 5px 5px 0px #888;
+    -webkit-box-shadow:  5px 5px 5px 0px #888;
+}
+
+.thumb_container:hover {
+    -moz-box-shadow: 5px 5px 5px 0px #444;
+    -webkit-box-shadow:  5px 5px 5px 0px #444;
+}
+
+.thumb_container .title_overlay {
+    font-size:0.9em;
+    position:absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index:200;
+    color:#000;
+    background: rgba(255, 255, 255, 0.7);
+    width:220px;
+    overflow: hidden;
+    padding:10px;
+    visibility: hidden;
+    text-decoration:none;
+}
+
+.thumb_container a, .thumb_container:hover a{
+    text-decoration:none;
+    text-transform: none;
+}
+
+.thumb_container:hover .title_overlay {
+    visibility: visible;
+}
+
+.pagination {
+    width:100%;
+    clear: both;
+    padding : 10px;
+    font-family: 'Geo', arial, serif;
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+.pagination a {
+    border: none;
+    text-transform: uppercase;
+    padding:10px;
+    background: #EAEAEA;
+    cursor: pointer;
+    -moz-box-shadow: 3px 3px 5px 0px #888;
+    -webkit-box-shadow:  3px 3px 5px 0px #888;
+}
+
+.pagination a:hover {
+    background: #F9F9F9;
+    -moz-box-shadow: 5px 5px 5px 0px #444;
+    -webkit-box-shadow:  5px 5px 5px 0px #444;
+}
+
+#search_box {
+    clear:both;
+    width:100%;
+    padding-top: 20px;
+}
+
+#search_box h1 {
+    
+}
+
+#left_new_picture {
+    width: 250px;
+    float: left;
+    display: block;
+    padding-bottom: 30px;
+}
+
+#right_new_picture {
+    width: 730px;
+    float: right;
+    display: block;
+    border:1px #bbb solid;
+}
+
+#right_new_picture textarea {
+    height: 150px;
+    width: 90%;
+}
+
+#right_new_picture h3 {
+    margin: 0;
+}
+
+#data_container {
+    position: relative;
+    display: block;
+}
+
+#title_field {
+    width: 30%;
+    float: left;
+}
+
+#title_field input {
+    width: 90%;
+}
+
+#blurb_field {
+    width: 65%;
+    float: right;
+}
+
+#canvas_wrapper {
+    width: 1000px;
+    height: 1000px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#large {
+    margin-top: 20px;
+}
+
+#disqus_thread {
+    border-top:1px #bbb solid;
+    margin-top: 40px;
+    width: 100%;
+    clear: both;
+}
+
+.previous_button, .next_button {
+    position: fixed;
+    top: 70%;
+    font-size: 5em;
+    color: #ccc;
+}
+
+.next_button {
+    left: 5%;
+}
+
+.previous_button {
+    right: 5%;
+}
+
+.example_data_cell {
+    background: #999;
+   width: 200px;
+   height:20px;
+}
+
+.example_data_row {
+    
+}
+
+.example_data_table {
+    border-top: 1px solid #673818;
+}
+
+#processing-canvas {
+    width: 1000px;
+    height: 1000px;
+    position:relative;
+}
+
+
+.clear {clear:both} 
+/* remove the list style */
+#nav {
+    margin:0 auto; 
+    padding:0; 
+    list-style:none;
+    width: 600px;
+    position: relative;
+    top: -10px;
+    font-family: 'Geo', arial, serif;
+    font-size:1.2em;
+    
+}   
+     
+    /* make the LI display inline */
+    /* it's position relative so that position absolute */
+    /* can be used in submenu */
+    #nav li {
+        float:left; 
+        display:block; 
+        width:146px;  
+        position:relative;
+        z-index:500; 
+        margin:0 0 0 0px;
+        
+    }
+         
+    /* this is the parent menu */
+    #nav li a {
+        
+        display:block; 
+        padding:8px 5px 0 5px; 
+         
+        height:23px; 
+        text-decoration:none; 
+        text-align:center; 
+    }
+    
+    
+     
+    /* you can make a different style for default selected value */
+     
+        /* submenu, it's hidden by default */
+        #nav ul {
+            position:absolute; 
+            left:0; 
+            display:none; 
+            margin:0 0 0 0px; 
+            padding:0 0 10px 0; 
+            list-style:none;
+            border-right: 1px #000 solid;
+            border-left: 1px #000 solid;
+            border-bottom: 1px #000 solid;
+            background:#f8f8f8 url(http://numberpicture.com/img/background.jpg);
+        }
+         
+        #nav ul li {
+            width:146px; 
+            float:left;
+            font-size: 0.9em;
+            
+        }
+         
+        /* display block will make the link fill the whole area of LI */
+        #nav ul a {
+            display:block;  
+            height:15px;
+            padding: 8px 5px; 
+        }
+        
+        #nav li ul li a {
+            display:block;  
+            height:14px;
+            padding: 4px 4px; 
+        }
+ 
+/* fix ie6 small issue */
+/* we should always avoid using hack like this */
+/* should put it into separate file : ) */
+*html #nav ul {
+    margin:0 0 0 -2px;
+}
+
+.learn {
+    width:1000px;
+    margin: 0 auto;
+    text-align: center;
+    }
+
+#learn {
+    width:400px;
+    margin: 0 auto;
+    }
+    
+#learn p, .learn p{
+    text-align: justify;
+    }
+    
+#learn img{
+    position: relative;
+    left: -110px;
+    margin-bottom: 20px;
+    border: 10px solid #000;
+}
+
+#learn h2 {
+    padding-top: 30px;
+    display: block;
+}
+
+.help {
+   
+    padding: 0 20px 0 0px;
+    background: url(http://numberpicture.com/img/help.png) no-repeat top right;
+}
+    
+pre {
+	text-align:left;
+	padding: 0;
+	margin: 0 0 20px 0;
+	background: #f0f0f0;
+	border: 1px solid #ccc;
+	line-height: 20px; /*--Height of each line of code--*/
+	width: 400px;
+	overflow: hidden; /*--If the Code exceeds the width, a scrolling is available--*/
+	overflow-Y: hidden;  /*--Hides vertical scroll created by IE--*/
+}
+
+pre:hover {
+    width: 800px;
+    overflow:auto;
+}
+
+pre code {
+        color: #FF1980;
+	margin: 20px;  
+	padding: 0;
+	display: block;
+}
+
+.back_to_top {
+    display: block;
+    padding-top:20px;
+}
+
+#footer {
+    width: 100%;
+    margin-top: 30px;
+    border-top: 1px #bbb solid;
+    border-bottom: 1px #bbb solid;
+    text-align: left;
+    font-size: 0.8em;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+#footer a{
+    color: #999;
+}
+
+#footer:hover a{
+    color: #000;
+}
+
+#footer a:hover {
+    text-decoration: none;
+    color: #FF1980;
+}
+
+#footer ul {
+    padding-left: 0;
+}
+
+#footer ul li {
+    list-style: none;
+    float:left;
+    width: 25%;
+    height: 100%;
+    padding: 0;
+}
+
+#footer ul li a {
+    padding-bottom: 20px;
+    display: block;
+    
+}
+
+#footer ul li ul li a {
+    padding-bottom: 0px;
+}
+
+#footer ul li ul li {
+    height: auto;
+    width:100%;
+    display: block;
+}
+
+#footer ul li ul li a {
+    clear:left;
+}
+
+#footer a.master_parent {
+    font-weight: bold;
+}
+
+#credit, #credit a {
+    color: #999;
+    font-size: 0.8em;
+}
+
+#credit a:hover {
+    color: #FF1980;
+}
+
+.hasFloats 
+{
+    _height: 1%;
+}
+ 
+
+.hasFloats:after 
+{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    clear: both;
+    height: 0;
+    font-size: 0;
+}
+
+#dsq-reply, #dsq-content {
+    text-align: left;
+}
+
+#dsq-reply h3, #dsq-content h3{
+    visibility: hidden;
+    height: 10px;
+}
+
+#side_link_wrap {
+    position: fixed;
+    left: 10px;
+    top: 50% !important;
+    -webkit-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg);
+    font-family: "Geo", sans-serif;
+    display: block;
+    text-align: center;
+}
+
+.side_link {
+    margin: 0;
+}
+
+.custom_images {
+    position: fixed;
+    left: 0;
+    top: 40%;
+}
+
+.custom_images a {
+    float: left;
+    clear: left;
+}
+
+#commetric_header {
+    position: absolute;
+    top: 28px;
+    left: 376px;
+    z-index: 1000;
+}

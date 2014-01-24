@@ -1,0 +1,55 @@
+background(255);
+
+fill(0);
+smooth();
+PFont myFont = loadFont("Oswald");  
+int font_size = 30;
+textFont(myFont, font_size);  
+textAlign(LEFT, BASELINE);
+text(title, 100, 900);
+int font_size = 15;
+textFont(myFont, font_size);  
+textblock(blurb, 100 , 920, 800);
+textAlign(LEFT, TOP);
+
+float [] total = new float[data[0].length - 1];
+float [] hor_multiplier = new float[data[0].length - 1];
+
+for (int b = 1; b < data[0].length; b++)
+{
+for (int a = 1; a < data.length; a++){
+total[b-1] +=  int(data[a][b]);
+}
+}
+
+color from = color(random(255), random(255), random(255));
+color to = color(random(255), random(255), random(255));
+
+//color [] colors = { color(227, 16, 30), color(250, 150, 20), color(247, 244, 27)};
+
+for(int c = 0; c < total.length; c++)
+{
+hor_multiplier[c] = 800 / total[c];
+}
+
+ver_multiplier = 600 / ((data[0].length - 1) * 2);
+
+int hor_counter = 0;
+
+for(int c =1; c < data[1].length; c++)
+{
+       fill(0);
+       text(data[0][c], 100, 200 + ver_multiplier * (c-1) * 2 + ver_multiplier + 8);
+       for(int d = 1; d < data.length; d++)
+       {   
+if(d == 1){ fill(from); }
+else if (d== data.length - 1) { fill(to); }
+else {
+       fill(lerpColor(from, to, 1 / data.length * d));
+}
+//println(1 / data.length * d);
+       rect(100 + hor_counter, 200 + ver_multiplier * (c-1) * 2, int(data[d][c]) * hor_multiplier[c -1], ver_multiplier);
+       hor_counter +=  int(data[d][c]) * hor_multiplier[c -1];
+       }
+       hor_counter = 0;
+}
